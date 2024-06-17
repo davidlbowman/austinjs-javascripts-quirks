@@ -5,6 +5,7 @@ function arrayCoercion(a, b) {
 /*
  * In JavaScript, when the + operator is used with an array and another value,
  * the array is coerced to a string by joining its elements with commas.
+ *
  * The resulting string is then concatenated with the other value.
  */
 
@@ -27,7 +28,8 @@ arrayCoercion([1, 2], [3, 4]) // '1,23,4'
 arrayCoercion(["a", "b"], ["c", "d"]) // 'a,bc,d'
 
 /*
- * The behavior is the same regardless of the data types of the elements inside the array.
+ * The behavior is the same regardless of the data types of the elements
+ * inside the array.
  */
 
 arrayCoercion([true, false], "hello") // 'true,falsehello'
@@ -35,7 +37,8 @@ arrayCoercion([null, undefined], "hello") // ',hello'
 arrayCoercion([{ x: 1 }, { y: 2 }], "hello") // '[object Object],[object Object]hello'
 
 /*
- * If the other value is not a string or a number, it is coerced to a string using its toString() method.
+ * If the other value is not a string or a number, it is coerced to a
+ * string using its toString() method.
  */
 
 arrayCoercion([1, 2, 3], true) // '1,2,3true'
