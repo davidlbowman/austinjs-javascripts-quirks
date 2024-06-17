@@ -10,9 +10,13 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"suspicious": {
+				"noDoubleEquals": "off"
+			}
 		}
 	},
+
 	"organizeImports": {
 		"enabled": true
 	},
