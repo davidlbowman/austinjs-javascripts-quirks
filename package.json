@@ -1,12 +1,19 @@
 {
-  "name": "austinjs-javascripts-quirks",
-  "module": "index.ts",
-  "type": "module",
-  "devDependencies": {
-    "@biomejs/biome": "1.8.1",
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  }
+	"name": "austinjs-javascripts-quirks",
+	"module": "index.ts",
+	"type": "module",
+	"scripts": {
+		"apply": "bunx @biomejs/biome check --write ./",
+		"check": "bunx @biomejs/biome check ./"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.8.1",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"lefthook": "^1.6.16"
+	}
 }
