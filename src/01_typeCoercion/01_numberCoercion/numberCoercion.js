@@ -4,7 +4,9 @@ function addNumbers(a, b) {
 
 /*
  * The addNumbers function performs addition between two values.
+ *
  * If both values are numbers, it returns their sum as a number.
+ *
  * If one or both values are strings, it concatenates them as strings.
  */
 
@@ -20,8 +22,12 @@ function subtractNumbers(a, b) {
 
 /*
  * The subtractNumbers function performs subtraction between two values.
- * If both values are numbers or can be converted to numbers, it returns their difference as a number.
- * If one or both values cannot be converted to numbers, it returns NaN (Not-a-Number).
+ *
+ * If both values are numbers or can be converted to numbers, it returns their
+ * difference as a number.
+ *
+ * If one or both values cannot be converted to numbers, it returns NaN
+ * (Not-a-Number).
  */
 
 subtractNumbers(1, 2) // -1
@@ -36,7 +42,9 @@ function looselyCompareNumbers(a, b) {
 
 /*
  * The looselyCompareNumbers function compares two values using the == operator.
+ *
  * The == operator performs type coercion if the values have different types.
+ *
  * It returns true if the values are equal after type coercion, otherwise false.
  */
 
@@ -51,8 +59,12 @@ function strictlyCompareNumbers(a, b) {
 }
 
 /*
- * The strictlyCompareNumbers function compares two values using the === operator.
- * The === operator does not perform type coercion and returns true only if the values have the same type and value.
+ * The strictlyCompareNumbers function compares two values using
+ * the === operator.
+ *
+ * The === operator does not perform type coercion and returns true only if the
+ * values have the same type and value.
+ *
  * It returns false if the values have different types or different values.
  */
 
@@ -63,8 +75,15 @@ strictlyCompareNumbers(0, false) // false
 strictlyCompareNumbers(null, undefined) // false
 
 /*
- * In JavaScript, the + operator is overloaded to perform addition for numbers and concatenation for strings.
- * The - operator always attempts to convert its operands to numbers before performing subtraction.
- * The == operator performs type coercion when comparing values of different types, which can lead to unexpected results.
- * The === operator does not perform type coercion and provides a stricter equality comparison based on both value and type.
+ * In JavaScript, the + operator is overloaded to perform addition for numbers
+ * and concatenation for strings.
+ *
+ * The - operator always attempts to convert its operands to numbers before
+ * performing subtraction.
+ *
+ * The == operator performs type coercion when comparing values of different
+ * types, which can lead to unexpected results.
+ *
+ * The === operator does not perform type coercion and provides a stricter
+ * equality comparison based on both value and type.
  */

@@ -3,8 +3,11 @@ function booleanCoercion(a, b) {
 }
 
 /*
- * In JavaScript, the && operator performs boolean coercion on the first operand.
+ * In JavaScript, the && operator performs boolean coercion on the
+ * first operand.
+ *
  * If the first operand is truthy, it returns the second operand.
+ *
  * If the first operand is falsy, it returns the first operand.
  */
 
