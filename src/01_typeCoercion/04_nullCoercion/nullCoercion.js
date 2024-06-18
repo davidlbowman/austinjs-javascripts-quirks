@@ -34,7 +34,7 @@ compareNullCoercion(null, "null") // false
 
 /*
  * However, when comparing null with undefined using the == operator,
- * the comparison returns true due to a special case in JavaScript's 
+ * the comparison returns true due to a special case in JavaScript's
  * equality comparison.
  */
 
@@ -46,7 +46,7 @@ function strictCompareNullCoercion(a, b) {
 
 /*
  * When using the === operator to compare null with any other value,
- * no type coercion occurs, and the comparison returns true only if 
+ * no type coercion occurs, and the comparison returns true only if
  * both operands are null.
  */
 
@@ -57,6 +57,6 @@ strictCompareNullCoercion(null, undefined) // false
 strictCompareNullCoercion(null, null) // true
 
 /*
- * The === operator provides a strict equality comparison, checking 
+ * The === operator provides a strict equality comparison, checking
  * both the value and the type of the operands.
  */

@@ -1,9 +1,11 @@
+// @ts-nocheck
+
 function addNullCoercion(a: string, b: string): string
 function addNullCoercion(a: number, b: number): number
 function addNullCoercion(a: null, b: string | number): string | number
 function addNullCoercion(
 	a: string | number | null,
-	b: string | number,
+	b: string | number
 ): string | number {
 	if (a === null) {
 		return b
@@ -18,7 +20,7 @@ function addNullCoercion(
 }
 
 /*
- * The addNullCoercion function is overloaded to handle different 
+ * The addNullCoercion function is overloaded to handle different
  * type combinations.
  * If the first argument is null, it returns the second argument as is.
  * If both arguments are strings, it concatenates them.
@@ -37,7 +39,7 @@ function compareNullCoercion(a: number, b: number): boolean
 function compareNullCoercion(a: null, b: string | number): boolean
 function compareNullCoercion(
 	a: string | number | null,
-	b: string | number,
+	b: string | number
 ): boolean {
 	if (a === null) {
 		return false
@@ -52,13 +54,13 @@ function compareNullCoercion(
 }
 
 /*
- * The compareNullCoercion function is overloaded to handle different 
+ * The compareNullCoercion function is overloaded to handle different
  * type combinations.
  * If the first argument is null, it always returns false.
- * 
- * If both arguments are strings or both are numbers, it performs a 
+ *
+ * If both arguments are strings or both are numbers, it performs a
  * strict equality comparison.
- * 
+ *
  * If the type combination is not supported, it throws an error.
  */
 
@@ -77,7 +79,7 @@ function strictCompareNullCoercion(a: number, b: number): boolean
 function strictCompareNullCoercion(a: null, b: string | number): boolean
 function strictCompareNullCoercion(
 	a: string | number | null,
-	b: string | number,
+	b: string | number
 ): boolean {
 	if (a === null) {
 		return false
@@ -92,16 +94,16 @@ function strictCompareNullCoercion(
 }
 
 /*
- * The strictCompareNullCoercion function is overloaded to handle 
+ * The strictCompareNullCoercion function is overloaded to handle
  * different type combinations.
- * 
- * It behaves the same as the compareNullCoercion function, using 
+ *
+ * It behaves the same as the compareNullCoercion function, using
  * strict equality comparison.
- * 
+ *
  * If the first argument is null, it always returns false.
- * 
+ *
  * If both arguments are strings or both are numbers, it performs a strict equality comparison.
- * 
+ *
  * If the type combination is not supported, it throws an error.
  */
 
@@ -117,9 +119,9 @@ strictCompareNullCoercion(null, null) // TypeScript error: Argument of type 'nul
 
 /*
  * The behavior of null in TypeScript is similar to that of undefined.
- * 
+ *
  * TypeScript's type system ensures that null values are handled explicitly.
- * 
- * Attempting to pass null to a function expecting a string or number 
+ *
+ * Attempting to pass null to a function expecting a string or number
  * will result in a TypeScript error.
  */
