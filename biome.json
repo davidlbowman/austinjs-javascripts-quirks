@@ -17,10 +17,15 @@
 			},
 			"correctness": {
 				"noConstantCondition": "off",
-				"noInnerDeclarations": "off"
+				"noInnerDeclarations": "off",
+				"noInvalidUseBeforeDeclaration": "off"
 			},
 			"style": {
-				"noVar": "off"
+				"noVar": "off",
+				"useConst": "off"
+			},
+			"complexity": {
+				"useArrowFunction": "off"
 			}
 		}
 	},
