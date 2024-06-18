@@ -36,3 +36,12 @@ console.log(areFloatsEqual(x, y)) // Output: true
  * for approximate equality, taking into account the inherent limitations of
  * floating-point arithmetic.
  */
+
+/*
+ * Math Fact:
+ * In the epsilon-delta definition, the letter ε represents a small positive
+ * real number that can be made arbitrarily close to zero. It is used to
+ * specify the desired level of precision or tolerance for the limit. The goal
+ * is to show that the function values eventually stay within a certain range
+ * (±ε) of the limit value.
+ */
