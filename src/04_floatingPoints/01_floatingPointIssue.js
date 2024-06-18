@@ -6,10 +6,16 @@
  * for floating-point arithmetic. This standard defines how floating-point
  * numbers are stored and processed in binary format.
  *
- * Floating-point numbers are represented using a fixed number of bits, which
- * includes a sign bit, exponent bits, and mantissa bits. The mantissa
- * represents the significant digits of the number, while the exponent
- * determines the position of the decimal point.
+ * In JavaScript, numbers are typically represented using 64 bits (8 bytes)
+ * following the IEEE 754 standard for double-precision floating-point format.
+ * This applies to all numbers, including 0.1.
+ *
+ * The 64 bits are divided into three parts:
+ *      1) Sign bit (1 bit): Indicates whether the number is positive (0) or
+ *      negative (1).
+ *      2) Exponent (11 bits): Represents the exponent of the number in binary
+ *      format, with an offset of 1023.
+ *      3) Mantissa (52 bits): Represents the fractional part of the number.
  *
  * The problem arises because not all decimal fractions can be precisely
  * represented in binary format using a fixed number of bits. In the case of
@@ -49,22 +55,6 @@
  * repeating fraction in binary. However, due to the limited number of bits
  * available for the mantissa, the result is rounded to the nearest
  * representable value, which is not exactly 0.3.
- *
- * Representation of Numbers in JavaScript:
- *
- * In JavaScript, numbers are typically represented using 64 bits (8 bytes)
- * following the IEEE 754 standard for double-precision floating-point format.
- * This applies to all numbers, including 0.1.
- *
- * The 64 bits are divided into three parts:
- *      1) Sign bit (1 bit): Indicates whether the number is positive (0) or
- *      negative (1).
- *      2) Exponent (11 bits): Represents the exponent of the number in binary
- *      format, with an offset of 1023.
- *      3) Mantissa (52 bits): Represents the fractional part of the number.
- *
- * So, the number 0.1 is stored using 64 bits (8 bytes) in memory, even though
- * its binary representation is an infinite repeating fraction.
  *
  * It's important to note that this is not specific to the number 0.1 but
  * applies to all numbers in JavaScript, as they are all represented using the
