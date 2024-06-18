@@ -37,12 +37,13 @@
  *      Full 64-bit representation:
  *          0011111111010011001100110011001100110011001100110011001100110011
  *
- *      But, the binary representation of 0.1 + 0.2 is not exactly 0.3:
+ *      The binary representation of 0.1 + 0.2 is not exactly 0.3:
  *      Sign bit: 0 (positive)
  *      Exponent: 01111111011 (1020 in decimal, biased by 1023)
  *      Mantissa: 1001100110011001100110011001100110011001100110011010 (52 bits)
  *      Full 64-bit representation:
  *          0011111110111001100110011001100110011001100110011001100110011010
+ *      Floating point representation: 0.30000000000000004
  *
  * When these numbers are added together, the result is also an infinite
  * repeating fraction in binary. However, due to the limited number of bits
