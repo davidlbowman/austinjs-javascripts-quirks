@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 function booleanCoercion<T>(a: boolean, b: T): T | false {
     return a && b
 }
