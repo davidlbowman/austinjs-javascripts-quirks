@@ -45,7 +45,7 @@
  *
  *      The binary representation of 0.1 + 0.2 is not exactly 0.3:
  *      Sign bit: 0 (positive)
- *      Exponent: 01111111011 (1020 in decimal, biased by 1023)
+ *      Exponent: 01111111011 (1021 in decimal, biased by 1023)
  *      Mantissa: 1001100110011001100110011001100110011001100110011010 (52 bits)
  *      Full 64-bit representation:
  *          0011111110111001100110011001100110011001100110011001100110011010
