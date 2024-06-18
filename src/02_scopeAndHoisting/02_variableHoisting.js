@@ -21,7 +21,7 @@ varHoisting() // Output: undefined, 20
 
 function letHoisting() {
 	console.log(b) // ReferenceError: Cannot access 'b' before initialization
-	const b = 25
+	let b = 25
 }
 
 /*
