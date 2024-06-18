@@ -7,7 +7,7 @@ const myArray = [1, 2, 3]
 myArray.myCustomMethod() // Output: 'This is a custom method added to the Array prototype.'
 
 /*
- * In JavaScript, it is possible to modify the prototypes of built-in objects like Array or Object.
+ * In JavaScript, it is possible to modify the prototypes of built-in objects like Array or Object. 
  * However, this is generally considered a bad practice as it can lead to unexpected behavior
  * and make your code harder to reason about.
  *

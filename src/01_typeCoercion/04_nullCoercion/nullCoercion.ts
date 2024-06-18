@@ -18,7 +18,8 @@ function addNullCoercion(
 }
 
 /*
- * The addNullCoercion function is overloaded to handle different type combinations.
+ * The addNullCoercion function is overloaded to handle different 
+ * type combinations.
  * If the first argument is null, it returns the second argument as is.
  * If both arguments are strings, it concatenates them.
  * If both arguments are numbers, it performs addition.
@@ -51,9 +52,13 @@ function compareNullCoercion(
 }
 
 /*
- * The compareNullCoercion function is overloaded to handle different type combinations.
+ * The compareNullCoercion function is overloaded to handle different 
+ * type combinations.
  * If the first argument is null, it always returns false.
- * If both arguments are strings or both are numbers, it performs a strict equality comparison.
+ * 
+ * If both arguments are strings or both are numbers, it performs a 
+ * strict equality comparison.
+ * 
  * If the type combination is not supported, it throws an error.
  */
 
@@ -87,10 +92,16 @@ function strictCompareNullCoercion(
 }
 
 /*
- * The strictCompareNullCoercion function is overloaded to handle different type combinations.
- * It behaves the same as the compareNullCoercion function, using strict equality comparison.
+ * The strictCompareNullCoercion function is overloaded to handle 
+ * different type combinations.
+ * 
+ * It behaves the same as the compareNullCoercion function, using 
+ * strict equality comparison.
+ * 
  * If the first argument is null, it always returns false.
+ * 
  * If both arguments are strings or both are numbers, it performs a strict equality comparison.
+ * 
  * If the type combination is not supported, it throws an error.
  */
 
@@ -106,6 +117,9 @@ strictCompareNullCoercion(null, null) // TypeScript error: Argument of type 'nul
 
 /*
  * The behavior of null in TypeScript is similar to that of undefined.
+ * 
  * TypeScript's type system ensures that null values are handled explicitly.
- * Attempting to pass null to a function expecting a string or number will result in a TypeScript error.
+ * 
+ * Attempting to pass null to a function expecting a string or number 
+ * will result in a TypeScript error.
  */
