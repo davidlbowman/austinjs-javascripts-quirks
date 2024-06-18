@@ -1,5 +1,7 @@
+// @ts-nocheck
+
 function addBigInt(a: bigint, b: bigint): bigint {
-	return a + b
+    return a + b
 }
 
 /*
@@ -20,7 +22,7 @@ addBigInt(1n, 2) // TypeScript error: Argument of type 'number' is not assignabl
 addBigInt(1n, "2n") // TypeScript error: Argument of type 'string' is not assignable to parameter of type 'bigint'.
 
 function compareBigInt(a: bigint, b: bigint): boolean {
-	return a == b
+    return a == b
 }
 
 /*
@@ -39,7 +41,7 @@ compareBigInt(1n, 1) // TypeScript error: Argument of type 'number' is not assig
 compareBigInt(1n, "1n") // TypeScript error: Argument of type 'string' is not assignable to parameter of type 'bigint'.
 
 function strictCompareBigInt(a: bigint, b: bigint): boolean {
-	return a === b
+    return a === b
 }
 
 /*

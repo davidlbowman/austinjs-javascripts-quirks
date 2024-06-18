@@ -27,7 +27,8 @@
 				"useConst": "off"
 			},
 			"complexity": {
-				"useArrowFunction": "off"
+				"useArrowFunction": "off",
+				"noUselessConstructor": "off"
 			}
 		}
 	},
